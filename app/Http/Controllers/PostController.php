@@ -20,5 +20,6 @@ class PostController extends Controller
         "title" => Post::where('slug', $post['slug'])->first(),
         "post"  => $post
     ]);
+    
     }
 }

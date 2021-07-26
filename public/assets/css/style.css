@@ -1,14 +1,7 @@
-
 .jarak {
-    margin-right: 10px;
-}
-
-a {
-    color: black;
+  margin-right: 10px;
 }
 
 a:hover {
-color: gray;
+  color: gray;
 }
-
-
