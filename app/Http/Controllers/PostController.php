@@ -11,7 +11,7 @@ class PostController extends Controller
 
     return view("posts", [
         "title" => "Blog Posts",
-        "posts" => Post::all()
+        "posts" => Post::latest()->get()
     ]);
     }
 
@@ -20,6 +20,6 @@ class PostController extends Controller
         "title" => Post::where('slug', $post['slug'])->first(),
         "post"  => $post
     ]);
-    
+
     }
 }

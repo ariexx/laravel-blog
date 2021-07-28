@@ -7,7 +7,7 @@
     <h2>
         <a href="/posts/{{ $post->slug }}">{{ $post->title }}</a>
     </h2>
-    <p>Ditulis oleh : <a href="" class="text-decoration-none">{{ $post->user->name }}</a> di <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}</a></p>
+    <p>Ditulis oleh : <a href="/authors/{{ $post->user->id }}" class="text-decoration-none">{{ $post->user->name }}</a> di <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}</a></p>
     <p>{{ $post->excerpt }}</p>
 
     <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read more...</a>
